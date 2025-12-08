@@ -193,7 +193,7 @@ input[type="text"]:focus {
 }
 
 /* Footer */
-footer {
+body > footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -203,23 +203,23 @@ footer {
   flex-wrap: wrap;
 }
 
-footer span {
+body > footer span {
   font-size: 0.9rem;
 }
 
-footer nav {
+body > footer nav {
   display: flex;
   gap: 1rem;
 }
 
-footer nav a img {
+body > footer nav a img {
   width: 24px;
   height: 24px;
   filter: var(--icon-filter);
   transition: transform 0.2s;
 }
 
-footer nav a:hover img {
+body > footer nav a:hover img {
   transform: scale(1.2);
 }
 

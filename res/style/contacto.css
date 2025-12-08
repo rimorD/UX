@@ -105,7 +105,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   border: 1px solid var(--tertiary);
   border-radius: 16px;
   padding: 1.5rem;
@@ -124,6 +124,7 @@ article footer {
   display: flex;
   align-items: center;
   gap: 1rem;
+  background-color: var(--secondary);
 }
 
 /* Avatar */
@@ -132,7 +133,7 @@ article footer img {
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--tertiary);
+  border: 2px solid var(--primary);
 }
 
 /* Nombre */
