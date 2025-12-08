@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UO250757 | Página Personal</title>
+    <link href="res/style/experiencia.css" rel="stylesheet" />
+    <link href="res/style/common.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="res/image/favicon.ico" />
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("class", savedTheme);
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="res/image/logo.png" alt="Logo personal" id="logo" />
+        <nav>
+          <a href="index.html" data-i18n="navHome">Inicio</a>
+          <a href="aficiones.html" data-i18n="navHobbies">Aficiones</a>
+          <a class="active" href="experiencia.html" data-i18n="navExperience"
+            >Experiencia</a
+          >
+          <a href="contacto.html" data-i18n="navContact">Contacto</a>
+        </nav>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="search-input"
+          data-i18n="searchPlaceholder"
+          placeholder="Buscar..."
+        />
+
+        <select id="language-select">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="ca">CA</option>
+          <option value="zh">ZH</option>
+        </select>
+
+        <button id="theme-button">
+          <img id="theme-icon" src="res/image/sun.png" alt="Tema" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <h1 data-i18n="title_experience" aria-label="Experiencia profesional">
+        Experiencia Profesional
+      </h1>
+      <p data-i18n="desc_experience">
+        Un breve resumen de mi carrera profesional y mis capacidades técnicas.
+      </p>
+
+      <div class="container">
+        <!-- Columna izquierda: trayectoria profesional -->
+        <section aria-label="Trayectoria profesional">
+          <article>
+            <h3 data-i18n="master_title">Máster en Ingeniería Web</h3>
+            <h4 data-i18n="master_institution">
+              Universidad de Oviedo | 2025 - Presente
+            </h4>
+            <ul>
+              <li>
+                <span data-i18n="master_desc">
+                  Estoy cursando el máster en Ingeniería Web de la Universidad
+                  de Oviedo, en la Escuela de Ingeniería Informática.
+                </span>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h3 data-i18n="mobile_lead_title">
+              Responsable de Producto Mobile
+            </h3>
+            <h4 data-i18n="mobile_lead_company">
+              Prodity Software S.L.U. | 2022 - Presente
+            </h4>
+            <ul>
+              <li>
+                <span data-i18n="mobile_lead_1">
+                  Asumí la responsabilidad principal de la aplicación móvil
+                </span>
+              </li>
+              <li>
+                <span data-i18n="mobile_lead_2">
+                  Analicé, diseñé e implementé mejoras y cambios clave
+                  solicitados por los clientes
+                </span>
+              </li>
+              <li>
+                <span data-i18n="mobile_lead_3">
+                  Lideré proyectos de rediseño visual, optimizando pantallas y
+                  flujos esenciales de la app
+                </span>
+              </li>
+              <li>
+                <span data-i18n="mobile_lead_4">
+                  Actualmente desarrollo una nueva aplicación móvil,
+                  reemplazando la anterior con un stack moderno basado en React
+                  Native
+                </span>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h3 data-i18n="fullstack_title">Desarrollador Full Stack</h3>
+            <h4 data-i18n="fullstack_company">
+              Prodity Software S.L.U. | 2019 - 2022
+            </h4>
+            <ul>
+              <li>
+                <span data-i18n="fullstack_1">
+                  Inicié mi carrera trabajando en una aplicación legacy
+                  desarrollada con ASP.NET Framework 4.8
+                </span>
+              </li>
+              <li>
+                <span data-i18n="fullstack_2">
+                  Amplié mi experiencia en desarrollo backend y en la creación
+                  de aplicaciones web
+                </span>
+              </li>
+              <li>
+                <span data-i18n="fullstack_3">
+                  Fortalecí mis habilidades en gestión de proyectos, trabajo en
+                  equipo y aplicación de metodologías ágiles
+                </span>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h3 data-i18n="bachelor_title">
+              Graduado en Ingeniería de Software
+            </h3>
+            <h4 data-i18n="bachelor_institution">
+              Universidad de Oviedo | 2015 - 2020
+            </h4>
+            <ul>
+              <li>
+                <span data-i18n="bachelor_desc">
+                  Estudié el Grado en Ingeniería de Software de la Universidad
+                  de Oviedo, en la Escuela de Ingeniería Informática.
+                </span>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Columna derecha: habilidades y tecnologías -->
+        <aside aria-label="Habilidades y tecnologías">
+          <section>
+            <h3 data-i18n="skills_title">Habilidades</h3>
+            <ul>
+              <li aria-label="Full stack">
+                <span data-i18n="skill_fullstack">Full stack</span>
+              </li>
+              <li aria-label="Frontend móvil">
+                <span data-i18n="skill_frontmobile">Frontend móvil</span>
+              </li>
+              <li aria-label="Diseño de Interfaz">
+                <span data-i18n="skill_uiux">Diseño de Interfaz</span>
+              </li>
+              <li aria-label="Optimización y rendimiento">
+                <span data-i18n="skill_performance"
+                  >Optimización y rendimiento</span
+                >
+              </li>
+              <li aria-label="Integración con APIs">
+                <span data-i18n="skill_api">Integración con APIs</span>
+              </li>
+              <li aria-label="Trabajo en equipo y metodologías ágiles">
+                <span data-i18n="skill_teamwork"
+                  >Trabajo en equipo y metodologías ágiles</span
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3 data-i18n="tech_title">Tecnologías</h3>
+            <ul>
+              <li aria-label="React">
+                <img src="res/image/react.png" alt="React" />
+                <span>React</span>
+              </li>
+              <li aria-label="Angular">
+                <img src="res/image/angular.png" alt="Angular" />
+                <span>Angular</span>
+              </li>
+              <li aria-label="TypeScript">
+                <img src="res/image/typescript.png" alt="TypeScript" />
+                <span>TypeScript</span>
+              </li>
+              <li aria-label="C#">
+                <img src="res/image/c.png" alt="C#" />
+                <span>C#</span>
+              </li>
+              <li aria-label="Java">
+                <img src="res/image/java.png" alt="Java" />
+                <span>Java</span>
+              </li>
+              <li aria-label="Node.js">
+                <img src="res/image/node.png" alt="Node.js" />
+                <span>Node.js</span>
+              </li>
+              <li aria-label="MySQL">
+                <img src="res/image/mysql.png" alt="MySQL" />
+                <span>MySQL</span>
+              </li>
+              <li aria-label="SQL Server">
+                <img src="res/image/sqlserver.png" alt="SQL Server" />
+                <span>SQL Server</span>
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <span data-i18n="copyright"
+        >&copy; Diciembre 2025 David Ferreiro Fernández</span
+      >
+      <nav>
+        <a href="https://github.com/rimord" target="_blank" aria-label="GitHub">
+          <img src="res/image/github.png" alt="GitHub" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/david-ferreiro-fern%C3%A1ndez/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img src="res/image/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="mailto:uo250757@uniovi.es" aria-label="Email">
+          <img src="res/image/mail.png" alt="Email" />
+        </a>
+      </nav>
+    </footer>
+    <script src="common.js"></script>
+  </body>
+</html>

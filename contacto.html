@@ -1,24 +1,184 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>UO250757 | Página Personal</title>
-        <link href="estilos.css" rel="Stylesheet">
-        <script src="https://t.contentsquare.net/uxa/cc4c651c3da88.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>David Ferreiro Fernández</h1>
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="aficiones.html">Aficiones</a>
-                <a href="tecnologias.html">Experiencia</a>
-                <a class="active" href="contacto.html">Contacto</a>
-            </nav>
-        </header>
-        <main>
-            <h2>Mis Redes Sociales</h2>
-            <h2>Personas que me avalan</h2>
-        </main>
-    </body>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UO250757 | Página Personal</title>
+    <link href="res/style/contacto.css" rel="stylesheet" />
+    <link href="res/style/common.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="res/image/favicon.ico" />
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("class", savedTheme);
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="res/image/logo.png" alt="Logo personal" id="logo" />
+        <nav>
+          <a href="index.html" data-i18n="navHome">Inicio</a>
+          <a href="aficiones.html" data-i18n="navHobbies">Aficiones</a>
+          <a href="experiencia.html" data-i18n="navExperience">Experiencia</a>
+          <a class="active" href="contacto.html" data-i18n="navContact"
+            >Contacto</a
+          >
+        </nav>
+      </div>
+
+      <div>
+        <input
+          type="text"
+          id="search-input"
+          data-i18n="searchPlaceholder"
+          placeholder="Buscar..."
+        />
+
+        <select id="language-select">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="ca">CA</option>
+          <option value="zh">ZH</option>
+        </select>
+
+        <button id="theme-button">
+          <img id="theme-icon" src="res/image/sun.png" alt="Tema" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <h1 data-i18n="contactTitle">Hablemos</h1>
+      <p data-i18n="contactSubtitle">
+        Estoy disponible para nuevos proyectos y colaboraciones. Envíame un
+        mensaje.
+      </p>
+      <section aria-label="Información de contacto y redes sociales">
+        <address>
+          <a
+            href="mailto:uo250757@uniovi.es"
+            aria-label="Enviar correo electrónico a uo250757@uniovi.es"
+          >
+            <img src="res/image/mail.png" alt="Email" />
+
+            <span data-i18n="contactSendEmail">Envíame un correo</span>
+          </a>
+
+          <a
+            href="https://maps.app.goo.gl/cwUYaUDJTALJEvKDA"
+            target="_blank"
+            aria-label="Ver localización en Google Maps: Gijón, Asturias"
+          >
+            <img src="res/image/location.png" alt="Localización" />
+
+            <span data-i18n="contactLocation">Gijón, Asturias</span>
+          </a>
+        </address>
+
+        <nav aria-label="Redes sociales">
+          <div>
+            <a href="https://github.com/rimord" aria-label="Perfil de GitHub">
+              <img src="res/image/github.png" alt="GitHub" />
+            </a>
+
+            <span data-i18n="socialGithub">GitHub</span>
+          </div>
+
+          <div>
+            <a
+              href="https://www.linkedin.com/in/david-ferreiro-fern%C3%A1ndez/"
+              aria-label="Perfil de LinkedIn"
+            >
+              <img src="res/image/linkedin.png" alt="LinkedIn" />
+            </a>
+
+            <span data-i18n="socialLinkedin">LinkedIn</span>
+          </div>
+
+          <div>
+            <a href="#" aria-label="Perfil de Instagram">
+              <img src="res/image/instagram.png" alt="Instagram" />
+            </a>
+
+            <span data-i18n="socialInstagram">Instagram</span>
+          </div>
+        </nav>
+      </section>
+      <h2 data-i18n="testimonialsTitle">Lo que dicen de mí</h2>
+      <p data-i18n="testimonialsSubtitle">
+        Testimonios de colaboradores con los que he tenido el placer de
+        trabajar.
+      </p>
+
+      <section
+        aria-label="Contenedor de tarjetas de testimonios de clientes y colaboradores"
+      >
+        <article>
+          <blockquote data-i18n="testimonial1Quote">
+            "Trabajar con David fue una experiencia gratificante. Su
+            profesionalismo, atención al detalle y capacidad para resolver
+            problemas complejos superaron nuestras expectativas."
+          </blockquote>
+          <footer>
+            <img src="res/image/avatar1.png" alt="Avatar de Carlos Martínez" />
+            <div>
+              <h4 data-i18n="testimonial1Name">Carlos Martínez</h4>
+              <p data-i18n="testimonial1Role">Product Manager</p>
+            </div>
+          </footer>
+        </article>
+
+        <article>
+          <blockquote data-i18n="testimonial2Quote">
+            "La dedicación y la calidad del trabajo de David son excepcionales.
+            Aportó una perspectiva fresca y soluciones innovadoras que
+            impulsaron nuestro proyecto hacia el éxito."
+          </blockquote>
+          <footer>
+            <img src="res/image/avatar2.png" alt="Avatar de Cristina Megido" />
+            <div>
+              <h4 data-i18n="testimonial2Name">Cristina Megido</h4>
+              <p data-i18n="testimonial2Role">CTO en NovaTech</p>
+            </div>
+          </footer>
+        </article>
+
+        <article>
+          <blockquote data-i18n="testimonial3Quote">
+            "Profesionalidad y dedicación de principio a fin. Resultados
+            impecables."
+          </blockquote>
+          <footer>
+            <img src="res/image/avatar3.png" alt="Avatar de Miguel Rueda" />
+            <div>
+              <h4 data-i18n="testimonial3Name">Miguel Rueda</h4>
+              <p data-i18n="testimonial3Role">CEO en RuedaSoft</p>
+            </div>
+          </footer>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <span data-i18n="copyright"
+        >&copy; Diciembre 2025 David Ferreiro Fernández</span
+      >
+      <nav>
+        <a href="https://github.com/rimord" target="_blank" aria-label="GitHub">
+          <img src="res/image/github.png" alt="GitHub" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/david-ferreiro-fern%C3%A1ndez/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <img src="res/image/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="mailto:uo250757@uniovi.es" aria-label="Email">
+          <img src="res/image/mail.png" alt="Email" />
+        </a>
+      </nav>
+    </footer>
+    <script src="common.js"></script>
+  </body>
 </html>

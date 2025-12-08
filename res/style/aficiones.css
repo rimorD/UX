@@ -1,0 +1,93 @@
+/* ====== Secciones ====== */
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ====== Lista de elementos ====== */
+section ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+/* ====== Tarjetas individuales ====== */
+section li {
+  background-color: var(--secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+/* ====== Imágenes ====== */
+section li img {
+  width: 100%;
+  height: 220px;
+  object-fit: fill;
+}
+
+/* ====== Título (h3) ====== */
+section li h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+/* ====== Subtítulo (género) - primer p dentro de li ====== */
+section li p:first-of-type {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+/* ====== Tarjeta de descripción (último li) ====== */
+section li:last-child {
+  grid-column: span 2;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+section li:last-child p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  margin: 0;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 768px) {
+  section ul {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  section li:last-child {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  section ul {
+    grid-template-columns: 1fr;
+  }
+
+  section li:last-child {
+    grid-column: span 1;
+  }
+}
