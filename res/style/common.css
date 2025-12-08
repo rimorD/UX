@@ -241,13 +241,6 @@ main {
   flex: 1;
 }
 
-/* Títulos de sección */
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--text-main);
-}
-
 /* =========================
    Responsive
    ========================= */
