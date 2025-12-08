@@ -20,12 +20,12 @@ main > div > section[aria-label="Trayectoria profesional"] article {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-main > div > section[aria-label="Trayectoria profesional"] article h3 {
+main > div > section[aria-label="Trayectoria profesional"] article h2 {
   margin: 0 0 5px 0;
   color: var(--text-main);
 }
 
-main > div > section[aria-label="Trayectoria profesional"] article h4 {
+main > div > section[aria-label="Trayectoria profesional"] article h3 {
   margin: 0 0 10px 0;
   color: var(--text-secondary);
   font-weight: normal;
@@ -45,7 +45,7 @@ aside section {
   margin-bottom: 30px;
 }
 
-aside section h3 {
+aside section h2 {
   margin-bottom: 10px;
   color: var(--text-main);
   border-bottom: 2px solid var(--secondary);
